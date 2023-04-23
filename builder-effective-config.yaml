@@ -1,0 +1,22 @@
+directories:
+  output: dist
+  buildResources: build
+appId: com.ephraim.firesale
+linux:
+  target:
+    - snap
+    - AppImage
+    - deb
+    - ram
+win:
+  target:
+    - nsis
+  icon: icon.ico
+nsis:
+  oneClick: true
+  installerIcon: icon.ico
+  uninstallerIcon: icon.ico
+  uninstallDisplayName: uninstall firesale
+  allowToChangeInstallationDirectory: false
+files: []
+electronVersion: 22.0.3
